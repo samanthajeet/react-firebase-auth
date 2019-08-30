@@ -5,9 +5,13 @@ import App from "./components/App/App";
 import * as serviceWorker from "./serviceWorker";
 import { HashRouter } from "react-router-dom";
 
+import Firebase, { FirebaseContext } from "./components/Firebase";
+
 ReactDOM.render(
   <HashRouter>
-    <App />
+    <FirebaseContext.Provider value={new Firebase()}>
+      <App />
+    </FirebaseContext.Provider>
   </HashRouter>,
 
   document.getElementById("root")
