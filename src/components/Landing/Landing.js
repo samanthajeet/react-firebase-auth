@@ -1,14 +1,14 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 
 class Landing extends Component {
-  state = {  }
-  render() { 
-    return ( 
+  state = {};
+  render() {
+    return (
       <div>
-        <h1>Landing</h1>
+        <h1>Sam's Super Sweet App</h1>
       </div>
-     );
+    );
   }
 }
- 
+
 export default Landing;

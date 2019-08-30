@@ -2,16 +2,16 @@ import React from "react";
 import routes from "../constants/routes";
 import { withRouter } from "react-router-dom";
 import Navigation from "../Navigation/Navigation";
-import "../../App.css";
 
+import {AppContainer} from '../../Style'
 
 function App(props) {
   return (
-    <div>
-      <h1>Sam's Super Sweet App</h1>
+    <AppContainer>
       <Navigation history={props.history} />
+
       {routes}
-    </div>
+    </AppContainer>
   );
 }
 
