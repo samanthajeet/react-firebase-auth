@@ -1,15 +1,15 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
-const Navigation = () => {
+
+const Navigation = (props) => {
   return (
     <section>
       <ul>
         <li>
-          <Link to="/">Home</Link>
+          <button onClick={() => props.history.push('/')} >Home</button>
         </li>
         <li>
-          <Link to="/signin">Sign In</Link>
+        <button onClick={() => props.history.push('/signup')} >Sign Up</button>
         </li>
       </ul>
     </section>
